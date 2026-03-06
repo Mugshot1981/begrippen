@@ -914,5 +914,222 @@ const items = [
   type: "begrip",
   prompt: "niet-aanvalsverdrag",
   answer: "Verdrag uit 1939 waarin Duitsland en de Sovjet-Unie beloofden elkaar niet aan te vallen en elkaars tegenstanders niet te hulp te komen. In een geheim gedeelte van dit verdrag stond dat Polen tussen beide landen werd verdeeld."
+},
+
+  {
+  id: "his-h4-001",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Asmogendheden",
+  answer: "Het bondgenootschap van Duitsland, Italië en Japan tijdens de Tweede Wereldoorlog."
+},
+{
+  id: "his-h4-002",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Blitzkrieg",
+  answer: "Duits voor bliksemoorlog. De snelle Duitse opmars tijdens de Tweede Wereldoorlog."
+},
+{
+  id: "his-h4-003",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Slag om Engeland",
+  answer: "Een felle luchtoorlog tussen Duitsland en Groot-Brittannië."
+},
+{
+  id: "his-h4-004",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Operatie Barbarossa",
+  answer: "Het Duitse plan om het westelijke deel van de Sovjet-Unie in te nemen."
+},
+{
+  id: "his-h4-005",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Geallieerden",
+  answer: "Het bondgenootschap dat vocht tegen de asmogendheden, waaronder Groot-Brittannië, de Sovjet-Unie en de Verenigde Staten."
+},
+{
+  id: "his-h4-006",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Slag om Stalingrad",
+  answer: "Een veldslag bij de Russische stad Stalingrad in 1942-1943 waarbij Duitsland een zware nederlaag leed."
+},
+{
+  id: "his-h4-007",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Pearl Harbor",
+  answer: "Een Amerikaanse marinebasis op Hawaï die in 1941 werd aangevallen door Japan."
+},
+{
+  id: "his-h4-008",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "D-day",
+  answer: "De grote invasie in Normandië (Frankrijk) op 6 juni 1944 door de geallieerden."
+},
+{
+  id: "his-h4-009",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Tweefrontenoorlog",
+  answer: "Een oorlog waarbij een land op twee fronten tegelijk moet vechten."
+},
+{
+  id: "his-h4-010",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Duitse bezetting",
+  answer: "De periode van 10 mei 1940 tot 5 mei 1945 waarin Duitsland de macht had in Nederland."
+},
+{
+  id: "his-h4-011",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Capitulatie",
+  answer: "Het leger legt de wapens neer en geeft zich over."
+},
+{
+  id: "his-h4-012",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Regering in ballingschap",
+  answer: "Een regering die zegt de macht te hebben in een land maar deze daar niet kan uitoefenen."
+},
+{
+  id: "his-h4-013",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Gelijkschakeling",
+  answer: "Het onder directe controle van de nazi’s brengen van alle organisaties en media."
+},
+{
+  id: "his-h4-014",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Rechtsstaat",
+  answer: "Een staat waarin burgers beschermd zijn tegen onrechtmatig optreden van de overheid en van andere burgers."
+},
+{
+  id: "his-h4-015",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Collaboratie",
+  answer: "Samenwerken met de bezetter."
+},
+{
+  id: "his-h4-016",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Verzet",
+  answer: "De bezetter tegenwerken."
+},
+{
+  id: "his-h4-017",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Persoonsbewijs",
+  answer: "Een identiteitsbewijs."
+},
+{
+  id: "his-h4-018",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Februaristaking",
+  answer: "Een grote staking in Amsterdam in 1941 tegen anti-Joodse maatregelen van de bezetter."
+},
+{
+  id: "his-h4-019",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Distributiestelsel",
+  answer: "Een systeem waarbij je alleen producten kunt kopen met bonkaarten."
+},
+{
+  id: "his-h4-020",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Operatie Market Garden",
+  answer: "Een plan van de geallieerden om via Nederland Duitsland binnen te vallen door bruggen over grote rivieren in te nemen."
+},
+{
+  id: "his-h4-021",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Slag om Arnhem",
+  answer: "De poging van de geallieerden in 1944 om de brug over de Rijn bij Arnhem te veroveren op de Duitsers."
+},
+{
+  id: "his-h4-022",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Spoorwegstaking",
+  answer: "Een staking van het Nederlandse treinpersoneel in 1944 om het Duitse leger te verzwakken."
+},
+{
+  id: "his-h4-023",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Hongerwinter",
+  answer: "De strenge winter van 1944-1945 waarin er hongersnood was in West- en Noord-Nederland."
+},
+{
+  id: "his-h4-024",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Antisemitisme",
+  answer: "Haat tegen Joden."
+},
+{
+  id: "his-h4-025",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Rassenleer",
+  answer: "Het idee van de nazi’s dat er verschillende mensenrassen zijn en dat het ene ras beter is dan het andere."
+},
+{
+  id: "his-h4-026",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Neurenberger rassenwetten",
+  answer: "Wetten die vanaf 1935 in nazi-Duitsland golden waardoor Joden niet meer als volwaardige burgers werden gezien."
+},
+{
+  id: "his-h4-027",
+  subjectId: "geschiedenis",
+  chapterId: "his-h4",
+  type: "begrip",
+  prompt: "Kristallnacht",
+  answer: "Een door de nazi’s georganiseerde actie in november 1938 waarbij Joodse mensen werden aangevallen en Joods bezit werd vernield."
 }
 
