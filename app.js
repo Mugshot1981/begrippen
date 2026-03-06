@@ -223,11 +223,12 @@ function handleAnswer(clickedButton, selectedOption) {
       }
     });
 
-    feedback.innerHTML = `
-      <div class="feedback-title">FOUT</div>
-      <div class="feedback-answer-box">${currentQuestion.answer}</div>
-      <button id="feedbackContinueButton" class="feedback-continue-button">Verder</button>
-    `;
+feedback.innerHTML = `
+  <div class="feedback-title">FOUT</div>
+  <div class="feedback-term">${currentQuestion.prompt}</div>
+  <div class="feedback-answer-box">${currentQuestion.answer}</div>
+  <button id="feedbackContinueButton" class="feedback-continue-button">Verder</button>
+`;
     feedback.className = "feedback show bad";
     feedback.style.display = "block";
 
