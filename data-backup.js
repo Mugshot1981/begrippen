@@ -394,12 +394,205 @@ const items = [
     prompt: "wetgevende macht",
     answer: "De macht die wetten maakt."
   },
-  {
-    id: "his-h1-046",
-    subjectId: "geschiedenis",
-    chapterId: "his-h1",
-    type: "begrip",
-    prompt: "rechterlijke macht",
-    answer: "De macht die wetten handhaaft en mensen straft die de wet overtreden."
-  }
+{
+  id: "his-h1-046",
+  subjectId: "geschiedenis",
+  chapterId: "his-h1",
+  type: "begrip",
+  prompt: "rechterlijke macht",
+  answer: "De macht die wetten handhaaft en mensen straft die de wet overtreden."
+},
+
+{
+  id: "his-h2-001",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "nationalisme",
+  answer: "Een gevoel van trots voor je eigen land, volk en cultuur."
+},
+{
+  id: "his-h2-002",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "modern imperialisme",
+  answer: "Het idee bij Europese landen in de 19e eeuw dat zij land moesten veroveren in Azië en Afrika om zo een groot rijk op te bouwen."
+},
+{
+  id: "his-h2-003",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "militarisme",
+  answer: "Het idee dat oorlog iets moois is en dat een land zo kan laten zien hoe sterk het is."
+},
+{
+  id: "his-h2-004",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "wapenwedloop",
+  answer: "Een soort wedstrijd waarbij landen proberen om de meeste en beste wapens te bezitten."
+},
+{
+  id: "his-h2-005",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "bondgenootschap",
+  answer: "Een afspraak tussen twee of meer landen om elkaar te helpen bij een oorlog."
+},
+{
+  id: "his-h2-006",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "centralen",
+  answer: "Het bondgenootschap tussen Duitsland, Oostenrijk-Hongarije en het Turkse Rijk."
+},
+{
+  id: "his-h2-007",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "geallieerden (tijdens de Eerste Wereldoorlog)",
+  answer: "Het bondgenootschap tussen Rusland, Frankrijk en Groot-Brittannië."
+},
+{
+  id: "his-h2-008",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "tweefrontenoorlog",
+  answer: "Een oorlog waarbij een land op twee fronten tegelijkertijd moet vechten."
+},
+{
+  id: "his-h2-009",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "Von Schlieffenplan",
+  answer: "Een plan van de Duitse generaal Von Schlieffen dat een tweefrontenoorlog voor Duitsland moest voorkomen."
+},
+{
+  id: "his-h2-010",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "loopgraven",
+  answer: "Diepe greppels die beschutting geven tegen beschietingen."
+},
+{
+  id: "his-h2-011",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "totale oorlog",
+  answer: "Een oorlog waarbij de hele samenleving wordt ingezet om de oorlog te kunnen winnen."
+},
+{
+  id: "his-h2-012",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "propaganda",
+  answer: "Reclame voor politieke ideeën, met als doel zoveel mogelijk mensen te overtuigen."
+},
+{
+  id: "his-h2-013",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "vijandbeeld",
+  answer: "Het negatief afbeelden en beschrijven van de vijand."
+},
+{
+  id: "his-h2-014",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "censuur",
+  answer: "De regering controleert de pers en houdt dus toezicht op alle berichten die via massamedia naar buiten worden gebracht."
+},
+{
+  id: "his-h2-015",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "neutraal",
+  answer: "Als een land zich in geval van oorlog niet aansluit bij een van de strijdende partijen."
+},
+{
+  id: "his-h2-016",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "handelsbelemmeringen",
+  answer: "Alle problemen die handeldrijven moeilijk maken."
+},
+{
+  id: "his-h2-017",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "distributiestelsel",
+  answer: "Een stelsel waarin je alleen producten kunt kopen met bonkaarten."
+},
+{
+  id: "his-h2-018",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "Dodendraad",
+  answer: "Een hek met prikkeldraad dat onder hoge elektrische spanning stond, door Duitsland gebouwd op de grens tussen Nederland en België."
+},
+{
+  id: "his-h2-019",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "communisme",
+  answer: "Een politieke stroming. Communisten streven naar een samenleving waarin iedereen gelijk is."
+},
+{
+  id: "his-h2-020",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "Russische Revolutie",
+  answer: "De periode die begon met de opstand in februari 1917 en eindigde toen de communisten in oktober van dat jaar de macht grepen."
+},
+{
+  id: "his-h2-021",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "onbeperkte duikbootoorlog",
+  answer: "Een manier van vechten waarbij Duitsland vanaf zijn onderzeeërs vijandelijke én neutrale schepen beschiet."
+},
+{
+  id: "his-h2-022",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "wapenstilstand",
+  answer: "Een afspraak tussen de oorlogvoerende partijen om op te houden met vechten."
+},
+{
+  id: "his-h2-023",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "Verdrag van Versailles",
+  answer: "Het vredesverdrag tussen Duitsland en de geallieerden na afloop van de Eerste Wereldoorlog."
+},
+{
+  id: "his-h2-024",
+  subjectId: "geschiedenis",
+  chapterId: "his-h2",
+  type: "begrip",
+  prompt: "Volkenbond",
+  answer: "Een internationale organisatie die een nieuwe oorlog moest voorkomen."
+}
 ];
