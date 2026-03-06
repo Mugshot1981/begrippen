@@ -223,7 +223,11 @@ function handleAnswer(clickedButton, selectedOption) {
       }
     });
 
-    feedback.innerHTML = "FOUT<br><span class='correct-answer'>" + currentQuestion.answer + "</span>";
+    feedback.innerHTML = `
+      <div class="feedback-title">FOUT</div>
+      <div class="feedback-answer-box">${currentQuestion.answer}</div>
+      <button id="feedbackContinueButton" class="feedback-continue-button">Verder</button>
+    `;
     feedback.className = "feedback show bad";
     feedback.style.display = "block";
 
@@ -234,7 +238,6 @@ function handleAnswer(clickedButton, selectedOption) {
     }
 
     updateScoreDisplay();
-    nextButton.classList.remove("hidden");
   }
 }
 
@@ -270,7 +273,13 @@ startButton.addEventListener("click", () => {
 
 // ===== VOLGENDE VRAAG =====
 
+// ===== VERDER-KNOP IN FOUTPOPUP =====
 
+feedback.addEventListener("click", (event) => {
+  if (event.target && event.target.id === "feedbackContinueButton") {
+    buildQuestion();
+  }
+});
 
 
 // ===== FOUTEN OPNIEUW OEFENEN =====
