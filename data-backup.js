@@ -594,5 +594,325 @@ const items = [
   type: "begrip",
   prompt: "Volkenbond",
   answer: "Een internationale organisatie die een nieuwe oorlog moest voorkomen."
+},
+  {
+  id: "his-h3-001",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "interbellum",
+  answer: "De periode tussen de twee wereldoorlogen (1918-1939)."
+},
+{
+  id: "his-h3-002",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Republiek van Weimar",
+  answer: "Naam voor Duitsland tussen 1918 en 1933, toen Duitsland een parlementaire democratie was."
+},
+{
+  id: "his-h3-003",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "parlementaire democratie",
+  answer: "Een bestuursvorm waarin de macht ligt bij een parlement dat gekozen wordt door de burgers."
+},
+{
+  id: "his-h3-004",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "dolkstootlegende",
+  answer: "Het idee dat het Duitse leger de Eerste Wereldoorlog had kunnen winnen als de regering in 1918 geen wapenstilstand had gesloten."
+},
+{
+  id: "his-h3-005",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Verdrag van Versailles",
+  answer: "Het vredesverdrag tussen Duitsland en de geallieerden na afloop van de Eerste Wereldoorlog."
+},
+{
+  id: "his-h3-006",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "inflatie",
+  answer: "Het geld wordt minder waard."
+},
+{
+  id: "his-h3-007",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Dawesplan",
+  answer: "Plan uit 1924 dat inhield dat de Verenigde Staten goedkope leningen aan Duitsland gaven om zijn economie weer op te bouwen."
+},
+{
+  id: "his-h3-008",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "economische crisis",
+  answer: "Een periode waarin het slecht gaat met de economie."
+},
+{
+  id: "his-h3-009",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "beurskrach",
+  answer: "Een grote, plotselinge daling van de koersen van aandelen."
+},
+{
+  id: "his-h3-010",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Nationaalsocialistische Duitse Arbeiderspartij (NSDAP)",
+  answer: "De politieke partij van Adolf Hitler."
+},
+{
+  id: "his-h3-011",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "nationalisme",
+  answer: "Trots zijn op je eigen land, volk en cultuur."
+},
+{
+  id: "his-h3-012",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Führerprincipe",
+  answer: "Er is één leider die alle besluiten neemt en aan wie iedereen gehoorzaamt."
+},
+{
+  id: "his-h3-013",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "persoonsverheerlijking",
+  answer: "Een mens als een soort god vereren."
+},
+{
+  id: "his-h3-014",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "militarisme",
+  answer: "Het idee dat oorlog iets moois is en dat een land zo kan laten zien hoe sterk het is."
+},
+{
+  id: "his-h3-015",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "antisemitisme",
+  answer: "Haat tegen Joden."
+},
+{
+  id: "his-h3-016",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "dictatuur",
+  answer: "Een manier van regeren waarbij één persoon of een kleine groep alle macht heeft."
+},
+{
+  id: "his-h3-017",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "totalitaire staat",
+  answer: "Een land waarin het leven van de inwoners volledig wordt beheerst door de staat."
+},
+{
+  id: "his-h3-018",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "gelijkschakeling",
+  answer: "Het onder directe controle brengen van alle organisaties en alle media in Duitsland door de nazi’s."
+},
+{
+  id: "his-h3-019",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "indoctrinatie",
+  answer: "Het inprenten van een opvatting door deze continu te herhalen en geen andere meningen toe te staan."
+},
+{
+  id: "his-h3-020",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "concentratiekamp",
+  answer: "Grote kampen waarin bepaalde groepen mensen zonder proces werden opgesloten."
+},
+{
+  id: "his-h3-021",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Gestapo",
+  answer: "De geheime politie in nazi-Duitsland."
+},
+{
+  id: "his-h3-022",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "SA",
+  answer: "De knokploeg van de NSDAP: een groep gewapende mannen in uniform die de partij beschermde en tegenstanders bang maakte."
+},
+{
+  id: "his-h3-023",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "SS",
+  answer: "Een militaire organisatie binnen de NSDAP die vooral tijdens de Tweede Wereldoorlog veel misdaden pleegde."
+},
+{
+  id: "his-h3-024",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Heim ins Reich",
+  answer: "Het idee dat alle Duitssprekenden in één groot Duits rijk zouden moeten wonen."
+},
+{
+  id: "his-h3-025",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Anschluss",
+  answer: "De aansluiting in 1938 van Oostenrijk bij Duitsland."
+},
+{
+  id: "his-h3-026",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Conferentie van München",
+  answer: "Een bijeenkomst in 1938 waarbij Groot-Brittannië en Frankrijk toestonden dat Hitler Sudetenland innam, in ruil voor Hitlers belofte om verder geen gebieden in te nemen."
+},
+{
+  id: "his-h3-027",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "appeasementpolitiek",
+  answer: "Britse en Franse politiek van niet ingrijpen maar toegeven aan Hitler om de vrede te bewaren."
+},
+{
+  id: "his-h3-028",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Lebensraum",
+  answer: "Leefruimte voor het Duitse volk, die Hitler wilde krijgen door het Duitse grondgebied uit te breiden naar het oosten."
+},
+{
+  id: "his-h3-029",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "fascisme",
+  answer: "Een extreemrechtse politieke beweging die ontstond in Italië. Fascisten zijn extreem nationalistisch, militaristisch en tegen democratie."
+},
+{
+  id: "his-h3-030",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "aanpassingspolitiek",
+  answer: "Politiek waarbij de uitgaven van de overheid werden aangepast aan de teruglopende inkomsten: bezuinigen."
+},
+{
+  id: "his-h3-031",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "werkverschaffingsproject",
+  answer: "Groot project dat de regering organiseerde, waar werklozen verplicht zwaar werk deden in ruil voor een vergoeding."
+},
+{
+  id: "his-h3-032",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Nationaalsocialistische Beweging (NSB)",
+  answer: "Een extreemrechtse politieke partij die in 1931 door Anton Mussert in Nederland werd opgericht."
+},
+{
+  id: "his-h3-033",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "communisme",
+  answer: "Een politieke stroming. Communisten streven naar een samenleving waarin iedereen gelijk is."
+},
+{
+  id: "his-h3-034",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "planeconomie",
+  answer: "De economie wordt volledig geleid door de overheid."
+},
+{
+  id: "his-h3-035",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "vijfjarenplannen",
+  answer: "Plannen waarin staat wat en hoeveel er in vijf jaar geproduceerd moet worden."
+},
+{
+  id: "his-h3-036",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "collectivisatie",
+  answer: "Zelfstandige boerderijen werden samengevoegd tot grote gezamenlijke boerderijen die bezit waren van de staat."
+},
+{
+  id: "his-h3-037",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "Grote Terreur",
+  answer: "Periode van 1936 tot 1938, waarin de zuiveringen van Stalin op een hoogtepunt waren."
+},
+{
+  id: "his-h3-038",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "showproces",
+  answer: "Een rechtszaak waarbij al van tevoren vaststaat dat een verdachte schuldig wordt bevonden."
+},
+{
+  id: "his-h3-039",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "stalinisme",
+  answer: "Stalins manier van besturen."
+},
+{
+  id: "his-h3-040",
+  subjectId: "geschiedenis",
+  chapterId: "his-h3",
+  type: "begrip",
+  prompt: "niet-aanvalsverdrag",
+  answer: "Verdrag uit 1939 waarin Duitsland en de Sovjet-Unie beloofden elkaar niet aan te vallen en elkaars tegenstanders niet te hulp te komen. In een geheim gedeelte van dit verdrag stond dat Polen tussen beide landen werd verdeeld."
 }
-];
+
