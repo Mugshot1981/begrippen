@@ -152,6 +152,7 @@ letter-spacing:3px;
   transform: translate(-50%, -50%) scale(1);
   padding: 20px 40px;
   color: white;
+  pointer-events: auto;
 }
 
 .feedback.good {
