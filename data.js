@@ -185,8 +185,109 @@ const chapters = {
       term: "rechterlijke macht",
       description: "De macht die wetten handhaaft en mensen straft die de wet overtreden."
     }
-  ],
+   ],
 
+  "Hoofdstuk 2 – De Eerste Wereldoorlog 1914 - 1918": [
+    {
+      term: "nationalisme",
+      description: "Een gevoel van trots voor je eigen land, volk en cultuur."
+    },
+    {
+      term: "modern imperialisme",
+      description: "Het idee bij Europese landen in de 19e eeuw dat zij land moesten veroveren in Azië en Afrika om zo een groot rijk op te bouwen."
+    },
+    {
+      term: "militarisme",
+      description: "Het idee dat oorlog iets moois is en dat een land zo kan laten zien hoe sterk het is."
+    },
+    {
+      term: "wapenwedloop",
+      description: "Een soort wedstrijd waarbij landen proberen om de meeste en beste wapens te bezitten."
+    },
+    {
+      term: "bondgenootschap",
+      description: "Een afspraak tussen twee of meer landen om elkaar te helpen bij een oorlog."
+    },
+    {
+      term: "centralen",
+      description: "Het bondgenootschap tussen Duitsland, Oostenrijk-Hongarije en het Turkse Rijk."
+    },
+    {
+      term: "geallieerden (tijdens de Eerste Wereldoorlog)",
+      description: "Het bondgenootschap tussen Rusland, Frankrijk en Groot-Brittannië."
+    },
+    {
+      term: "tweefrontenoorlog",
+      description: "Een oorlog waarbij een land op twee fronten tegelijkertijd moet vechten."
+    },
+    {
+      term: "Von Schlieffenplan",
+      description: "Een plan van de Duitse generaal Von Schlieffen dat een tweefrontenoorlog voor Duitsland moest voorkomen."
+    },
+    {
+      term: "loopgraven",
+      description: "Diepe greppels die beschutting geven tegen beschietingen."
+    },
+    {
+      term: "totale oorlog",
+      description: "Een oorlog waarbij de hele samenleving wordt ingezet om de oorlog te kunnen winnen."
+    },
+    {
+      term: "propaganda",
+      description: "Reclame voor politieke ideeën, met als doel zoveel mogelijk mensen te overtuigen."
+    },
+    {
+      term: "vijandbeeld",
+      description: "Het negatief afbeelden en beschrijven van de vijand."
+    },
+    {
+      term: "censuur",
+      description: "De regering controleert de pers en houdt dus toezicht op alle berichten die via massamedia naar buiten worden gebracht."
+    },
+    {
+      term: "neutraal",
+      description: "Als een land zich in geval van oorlog niet aansluit bij een van de strijdende partijen."
+    },
+    {
+      term: "handelsbelemmeringen",
+      description: "Alle problemen die handeldrijven moeilijk maken."
+    },
+    {
+      term: "distributiestelsel",
+      description: "Een stelsel waarin je alleen producten kunt kopen met bonkaarten."
+    },
+    {
+      term: "Dodendraad",
+      description: "Een hek met prikkeldraad dat onder hoge elektrische spanning stond, door Duitsland gebouwd op de grens tussen Nederland en België."
+    },
+    {
+      term: "communisme",
+      description: "Een politieke stroming. Communisten streven naar een samenleving waarin iedereen gelijk is."
+    },
+    {
+      term: "Russische Revolutie",
+      description: "De periode die begon met de opstand in februari 1917 en eindigde toen de communisten in oktober van dat jaar de macht grepen."
+    },
+    {
+      term: "onbeperkte duikbootoorlog",
+      description: "Een manier van vechten waarbij Duitsland vanaf zijn onderzeeërs vijandelijke én neutrale schepen beschiet."
+    },
+    {
+      term: "wapenstilstand",
+      description: "Een afspraak tussen de oorlogvoerende partijen om op te houden met vechten."
+    },
+    {
+      term: "Verdrag van Versailles",
+      description: "Het vredesverdrag tussen Duitsland en de geallieerden na afloop van de Eerste Wereldoorlog."
+    },
+    {
+      term: "Volkenbond",
+      description: "Een internationale organisatie die een nieuwe oorlog moest voorkomen."
+    }
+  ]
+};
+
+  
   "Hoofdstuk 4 – De Tweede Wereldoorlog 1939-1945 en dekolonisatie": [
     {
       term: "Asmogendheden",
