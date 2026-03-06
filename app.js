@@ -200,12 +200,19 @@ function handleAnswer(clickedButton, selectedOption) {
     button.disabled = true;
   });
 
-  if (selectedOption.isCorrect) {
+   if (selectedOption.isCorrect) {
     clickedButton.classList.add("correct");
     scoreCorrect++;
     feedback.textContent = "GOED!";
     feedback.className = "feedback show good";
     feedback.style.display = "block";
+
+    updateScoreDisplay();
+
+    setTimeout(() => {
+      buildQuestion();
+    }, 700);
+
   } else {
     clickedButton.classList.add("wrong");
 
@@ -216,22 +223,19 @@ function handleAnswer(clickedButton, selectedOption) {
       }
     });
 
-   feedback.innerHTML = "FOUT<br><span class='correct-answer'>" + currentQuestion.answer + "</span>";
-feedback.className = "feedback show bad";
-feedback.style.display = "block";
+    feedback.innerHTML = "FOUT<br><span class='correct-answer'>" + currentQuestion.answer + "</span>";
+    feedback.className = "feedback show bad";
+    feedback.style.display = "block";
 
     const wrongItem = currentChapterItems.find((item) => item.id === currentQuestion.id);
 
     if (wrongItem && !wrongItems.some((item) => item.id === wrongItem.id)) {
       wrongItems.push(wrongItem);
     }
+
+    updateScoreDisplay();
+    nextButton.classList.remove("hidden");
   }
-
-  updateScoreDisplay();
-
-  setTimeout(() => {
-    buildQuestion();
-  }, 700);
 }
 
 // ===== QUIZ STARTEN =====
