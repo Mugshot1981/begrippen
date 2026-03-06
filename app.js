@@ -24,6 +24,7 @@ const progressFill = document.getElementById("progressFill");
 
 // ===== STATUS =====
 
+let currentChapterId = null;
 let currentChapterItems = [];
 let remainingQuestions = [];
 let currentQuestion = null;
@@ -88,16 +89,22 @@ function showEndScreen() {
   endScreen.classList.remove("hidden");
 }
 
+function getItemsForChapter(chapterId) {
+  return items.filter((item) => {
+    return item.chapterId === chapterId && item.type === "begrip";
+  });
+}
+
 
 // ===== HOOFDSTUKKEN LADEN =====
 
 function loadChapters() {
-  const chapterNames = Object.keys(chapters);
+  chapterSelect.innerHTML = '<option value="">-- Kies een hoofdstuk --</option>';
 
-  chapterNames.forEach((name) => {
+  chapters.forEach((chapter) => {
     const option = document.createElement("option");
-    option.value = name;
-    option.textContent = name;
+    option.value = chapter.id;
+    option.textContent = chapter.title;
     chapterSelect.appendChild(option);
   });
 }
@@ -118,26 +125,28 @@ function buildQuestion() {
 
   const correctItem = remainingQuestions.pop();
 
-  const wrongDescriptions = currentChapterItems
-    .filter((item) => item.term !== correctItem.term)
-    .map((item) => item.description);
+  const wrongAnswers = currentChapterItems
+    .filter((item) => item.id !== correctItem.id)
+    .map((item) => item.answer);
 
-  const shuffledWrongDescriptions = shuffleArray(wrongDescriptions).slice(0, 3);
+  const uniqueWrongAnswers = [...new Set(wrongAnswers)];
+  const shuffledWrongAnswers = shuffleArray(uniqueWrongAnswers).slice(0, 3);
 
   const options = shuffleArray([
     {
-      text: correctItem.description,
+      text: correctItem.answer,
       isCorrect: true
     },
-    ...shuffledWrongDescriptions.map((description) => ({
-      text: description,
+    ...shuffledWrongAnswers.map((answerText) => ({
+      text: answerText,
       isCorrect: false
     }))
   ]);
 
   currentQuestion = {
-    term: correctItem.term,
-    correctDescription: correctItem.description,
+    id: correctItem.id,
+    prompt: correctItem.prompt,
+    answer: correctItem.answer,
     options: options
   };
 
@@ -148,7 +157,7 @@ function buildQuestion() {
 // ===== VRAAG TONEN =====
 
 function renderQuestion() {
-  termDisplay.textContent = currentQuestion.term;
+  termDisplay.textContent = currentQuestion.prompt;
 
   currentQuestion.options.forEach((option) => {
     const button = document.createElement("button");
@@ -200,14 +209,15 @@ function handleAnswer(clickedButton, selectedOption) {
 // ===== QUIZ STARTEN =====
 
 startButton.addEventListener("click", () => {
-  const selectedChapter = chapterSelect.value;
+  const selectedChapterId = chapterSelect.value;
 
-  if (!selectedChapter) {
+  if (!selectedChapterId) {
     alert("Kies eerst een hoofdstuk");
     return;
   }
 
-  currentChapterItems = chapters[selectedChapter];
+  currentChapterId = selectedChapterId;
+  currentChapterItems = getItemsForChapter(currentChapterId);
 
   if (!currentChapterItems || currentChapterItems.length < 4) {
     alert("Dit hoofdstuk heeft minimaal 4 begrippen nodig.");
@@ -236,6 +246,7 @@ nextButton.addEventListener("click", () => {
 
 if (restartButton) {
   restartButton.addEventListener("click", () => {
+    currentChapterItems = getItemsForChapter(currentChapterId);
     remainingQuestions = shuffleArray([...currentChapterItems]);
     scoreCorrect = 0;
     scoreTotal = 0;
