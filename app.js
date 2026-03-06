@@ -256,9 +256,6 @@ startButton.addEventListener("click", () => {
 
 // ===== VOLGENDE VRAAG =====
 
-nextButton.addEventListener("click", () => {
-  buildQuestion();
-});
 
 
 
