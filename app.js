@@ -9,6 +9,7 @@ const feedback = document.getElementById("feedback");
 const nextButton = document.getElementById("nextButton");
 
 let currentChapterItems = [];
+let remainingQuestions = [];
 let currentQuestion = null;
 let answered = false;
 
@@ -86,8 +87,11 @@ function buildQuestion() {
   nextButton.classList.add("hidden");
   answered = false;
 
-  const correctItem = getRandomItem(currentChapterItems);
+ if (remainingQuestions.length === 0) {
+  remainingQuestions = shuffleArray([...currentChapterItems]);
+}
 
+const correctItem = remainingQuestions.pop();
   const wrongDescriptions = currentChapterItems
     .filter((item) => item.term !== correctItem.term)
     .map((item) => item.description);
@@ -179,15 +183,20 @@ startButton.addEventListener("click", () => {
     return;
   }
 
-  currentChapterItems = chapters[selectedChapter];
+currentChapterItems = chapters[selectedChapter];
 
-  if (!currentChapterItems || currentChapterItems.length < 4) {
-    alert("Dit hoofdstuk heeft minimaal 4 begrippen nodig.");
-    return;
-  }
+if (!currentChapterItems || currentChapterItems.length < 4) {
+  alert("Dit hoofdstuk heeft minimaal 4 begrippen nodig.");
+  return;
+}
 
-  quizArea.classList.remove("hidden");
-  buildQuestion();
+remainingQuestions = shuffleArray([...currentChapterItems]);
+scoreCorrect = 0;
+scoreTotal = 0;
+updateScoreDisplay();
+
+quizArea.classList.remove("hidden");
+buildQuestion();
 });
 
 
