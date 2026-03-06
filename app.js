@@ -12,6 +12,13 @@ let currentChapterItems = [];
 let currentQuestion = null;
 let answered = false;
 
+let scoreCorrect = 0;
+let scoreTotal = 0;
+
+const scoreCorrectEl = document.getElementById("scoreCorrect");
+const scoreTotalEl = document.getElementById("scoreTotal");
+const scoreStarsEl = document.getElementById("scoreStars");
+
 
 // ===== HULPFUNCTIES =====
 
@@ -30,6 +37,32 @@ function getRandomItem(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
+function updateScoreDisplay() {
+
+  scoreCorrectEl.textContent = scoreCorrect;
+  scoreTotalEl.textContent = scoreTotal;
+
+  if(scoreTotal === 0){
+    scoreStarsEl.textContent = "☆☆☆☆☆";
+    return;
+  }
+
+  const percent = scoreCorrect / scoreTotal;
+
+  let stars = 0;
+
+  if(percent >= 0.9) stars = 5;
+  else if(percent >= 0.75) stars = 4;
+  else if(percent >= 0.6) stars = 3;
+  else if(percent >= 0.4) stars = 2;
+  else if(percent >= 0.2) stars = 1;
+  else stars = 0;
+
+  scoreStarsEl.textContent =
+    "★★★★★".slice(0, stars) +
+    "☆☆☆☆☆".slice(0, 5 - stars);
+
+}
 
 // ===== HOOFDSTUKKEN LADEN =====
 
@@ -120,12 +153,17 @@ function handleAnswer(clickedButton, selectedOption) {
     }
   });
 
-  if (selectedOption.isCorrect) {
-    feedback.textContent = "Goed.";
-  } else {
-    clickedButton.classList.add("wrong");
-    feedback.textContent = "Fout.";
-  }
+ scoreTotal++;
+
+if (selectedOption.isCorrect) {
+  scoreCorrect++;
+  feedback.textContent = "Goed.";
+} else {
+  clickedButton.classList.add("wrong");
+  feedback.textContent = "Fout.";
+}
+
+updateScoreDisplay();
 
   nextButton.classList.remove("hidden");
 }
