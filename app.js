@@ -125,6 +125,8 @@ function loadChapters() {
 
 function buildQuestion() {
   feedback.textContent = "";
+  feedback.className = "feedback";
+  feedback.style.display = "none";
   answersContainer.innerHTML = "";
   nextButton.classList.add("hidden");
   answered = false;
