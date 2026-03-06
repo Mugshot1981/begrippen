@@ -106,7 +106,7 @@ if (remainingQuestions.length === 0) {
   return;
 }
 
-const correctItem = remainingQuestions.pop();
+
 
 const correctItem = remainingQuestions.pop();
   const wrongDescriptions = currentChapterItems
