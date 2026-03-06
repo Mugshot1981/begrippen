@@ -561,6 +561,199 @@ const chapters = {
       term: "Kristallnacht",
       description: "Een door de nazi’s georganiseerde actie in november 1938 waarbij Joodse mensen werden aangevallen en Joods bezit werd vernield."
     }
-  ]
 
+
+  
+  ],
+
+  "Hoofdstuk 5 – De wereld na 1945": [
+    {
+      term: "invloedssfeer",
+      description: "Een gebied dat onder grote invloed staat van een ander land."
+    },
+    {
+      term: "communisme",
+      description: "Een politieke stroming. Communisten streven naar een samenleving waarin iedereen gelijk is."
+    },
+    {
+      term: "Oostblok",
+      description: "De Oost-Europese landen die tijdens de Koude Oorlog in de Russische invloedssfeer lagen."
+    },
+    {
+      term: "satellietstaat",
+      description: "Een land dat volledig afhankelijk is van een ander land."
+    },
+    {
+      term: "kapitalisme",
+      description: "Economie waarin ondernemers winst willen maken, er concurrentie bestaat en er privébezit is."
+    },
+    {
+      term: "Westblok",
+      description: "De West-Europese landen die tijdens de Koude Oorlog in de Amerikaanse invloedssfeer lagen."
+    },
+    {
+      term: "IJzeren Gordijn",
+      description: "De zwaarbewapende grens tussen het Oostblok en het Westblok."
+    },
+    {
+      term: "Koude Oorlog",
+      description: "De periode van vijandschap tussen het kapitalistische Westen en het communistische Oosten (1945-1989)."
+    },
+    {
+      term: "Blokkade van Berlijn",
+      description: "Het afsluiten van alle toegangswegen tot West-Berlijn door Stalin (1948-1949)."
+    },
+    {
+      term: "NAVO",
+      description: "Een militair bondgenootschap van de Verenigde Staten, Canada en West-Europese landen."
+    },
+    {
+      term: "Warschaupact",
+      description: "Een militair bondgenootschap tussen de Sovjet-Unie en de communistische landen in Oost-Europa."
+    },
+    {
+      term: "Marshallplan",
+      description: "De economische steun van de Verenigde Staten aan landen in Europa na de Tweede Wereldoorlog."
+    },
+    {
+      term: "containmentpolitiek",
+      description: "De Amerikaanse politiek die moest voorkomen dat het communisme zich verder verspreidde."
+    },
+    {
+      term: "Berlijnse Muur",
+      description: "Een muur rondom West-Berlijn, gebouwd door de regering van de DDR."
+    },
+    {
+      term: "Cubacrisis",
+      description: "De grote spanning tussen de Sovjet-Unie en de Verenigde Staten toen de Sovjet-Unie raketten op Cuba wilde plaatsen."
+    },
+    {
+      term: "perestrojka",
+      description: "Een grote verandering in de communistische economie in de Sovjet-Unie."
+    },
+    {
+      term: "glasnost",
+      description: "Russisch voor 'openheid'. Een grote verandering op politiek gebied in de Sovjet-Unie waardoor er meer vrijheid kwam."
+    },
+    {
+      term: "Val van de Berlijnse Muur",
+      description: "Het opengaan van de grens tussen West- en Oost-Berlijn."
+    },
+    {
+      term: "Duitse hereniging",
+      description: "De vereniging van Oost-Duitsland en West-Duitsland tot één land."
+    },
+    {
+      term: "wederopbouw",
+      description: "Het herstel van de schade die de Tweede Wereldoorlog had veroorzaakt."
+    },
+    {
+      term: "gastarbeiders",
+      description: "Arbeidskrachten uit het buitenland die tijdelijk naar Nederland kwamen om te werken."
+    },
+    {
+      term: "consumptiemaatschappij",
+      description: "Een maatschappij waarin veel mensen luxeproducten kunnen kopen."
+    },
+    {
+      term: "verzorgingsstaat",
+      description: "De overheid zorgt ervoor dat burgers een inkomen hebben en zorg krijgen als ze dat nodig hebben."
+    },
+    {
+      term: "amerikanisering",
+      description: "De beïnvloeding van een cultuur door de Amerikaanse cultuur."
+    },
+    {
+      term: "jongeren­cultuur",
+      description: "De eigen stijl, houding en opvattingen van een groep jongeren."
+    },
+    {
+      term: "individualisering",
+      description: "Niet de groep maar het individu bepaalt steeds meer wat goed voor hem of haar is."
+    },
+    {
+      term: "democratisering",
+      description: "Als mensen meer inspraak krijgen."
+    },
+    {
+      term: "secularisatie",
+      description: "Steeds minder mensen zijn gelovig en gaan naar de kerk."
+    },
+    {
+      term: "ontzuiling",
+      description: "De invloed van de zuilen neemt af."
+    },
+    {
+      term: "tweede feministische golf",
+      description: "Feministen voerden actie in de jaren 1960 en 1970 om meer rechten voor vrouwen te krijgen."
+    },
+    {
+      term: "poldermodel",
+      description: "Samenwerking tussen de regering, werkgevers en werknemers om afspraken te maken."
+    },
+    {
+      term: "populisme",
+      description: "Een politieke beweging die opkomt voor de belangen van het 'volk' en zich afzet tegen de zittende politiek."
+    },
+    {
+      term: "Verenigde Naties (VN)",
+      description: "Een internationale organisatie waarin bijna alle landen samenwerken om vrede en rechtvaardigheid te bevorderen."
+    },
+    {
+      term: "Veiligheidsraad",
+      description: "Onderdeel van de VN dat als taak heeft de vrede te bewaken en militair mag ingrijpen."
+    },
+    {
+      term: "vetorecht",
+      description: "Het recht om 'nee' te zeggen tegen een besluit waardoor het niet wordt aangenomen."
+    },
+    {
+      term: "Europese Gemeenschap voor Kolen en Staal (EGKS)",
+      description: "Samenwerking van zes Europese landen op het gebied van kolen en staal (vanaf 1951)."
+    },
+    {
+      term: "Europese Economische Gemeenschap (EEG)",
+      description: "Samenwerking van Europese landen op economisch gebied (vanaf 1957)."
+    },
+    {
+      term: "Europese Unie (EU)",
+      description: "Samenwerking van een groot aantal Europese landen op verschillende gebieden vanaf 1993."
+    },
+    {
+      term: "euro",
+      description: "De gemeenschappelijke Europese munt die vanaf 2002 gebruikt wordt in een groot aantal EU-landen."
+    },
+    {
+      term: "Europese Commissie",
+      description: "Het dagelijks bestuur van de Europese Unie."
+    },
+    {
+      term: "Europees Parlement",
+      description: "Volksvertegenwoordiging van de Europese Unie."
+    },
+    {
+      term: "Raad van Ministers",
+      description: "Vergadering waaraan uit elke EU-lidstaat één minister deelneemt."
+    },
+    {
+      term: "globalisering",
+      description: "Landen over de hele wereld raken op politiek, economisch en cultureel gebied steeds sterker met elkaar verbonden."
+    },
+    {
+      term: "politieke islam",
+      description: "Een politieke beweging die wil dat de samenleving bestuurd wordt volgens een strenge uitleg van de islam."
+    },
+    {
+      term: "terrorisme",
+      description: "Het gebruik van geweld om mensen angst aan te jagen en politieke doelen te bereiken."
+    },
+    {
+      term: "multiculturele samenleving",
+      description: "Samenleving die bestaat uit groepen mensen met verschillende culturen."
+    },
+    {
+      term: "pluriforme samenleving",
+      description: "Samenleving die bestaat uit groepen mensen met verschillende culturen."
+    }
+  ]
 };
