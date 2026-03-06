@@ -234,12 +234,8 @@ description: "De macht die wetten handhaaft en mensen straft die de wet overtred
 
 ]
 
-};
 
-
-const chapters = {
-
-
+///////////////Hoofdstuk 4
   
 "Hoofdstuk 4 – De Tweede Wereldoorlog 1939-1945 en dekolonisatie": [
 
