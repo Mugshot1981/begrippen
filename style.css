@@ -217,8 +217,8 @@ letter-spacing:3px;
   font-weight:800;
   margin-bottom:18px;
 }
-
 body.blur-background main {
-  filter: blur(6px);
-  transition: filter 0.18s ease;
+  filter: blur(12px) brightness(0.8);
+  transform: scale(0.995);
+  transition: filter 0.18s ease, transform 0.18s ease;
 }
