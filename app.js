@@ -125,15 +125,62 @@ function getItemsForChapters(chapterIds) {
 
 // ===== HOOFDSTUKKEN LADEN =====
 
+function updateChapterDropdownButtonText() {
+  const selectedLabels = Array.from(chapterSelect.selectedOptions).map(
+    (option) => option.textContent
+  );
+
+  if (selectedLabels.length === 0) {
+    chapterDropdownButton.textContent = "Kies hoofdstukken";
+  } else if (selectedLabels.length === 1) {
+    chapterDropdownButton.textContent = selectedLabels[0];
+  } else {
+    chapterDropdownButton.textContent = `${selectedLabels.length} hoofdstukken gekozen`;
+  }
+}
+
+function syncChapterSelectFromCheckboxes() {
+  const checkedIds = Array.from(
+    chapterCheckboxList.querySelectorAll('input[type="checkbox"]:checked')
+  ).map((checkbox) => checkbox.value);
+
+  Array.from(chapterSelect.options).forEach((option) => {
+    option.selected = checkedIds.includes(option.value);
+  });
+
+  updateChapterDropdownButtonText();
+}
+
 function loadChapters() {
   chapterSelect.innerHTML = "";
+  chapterCheckboxList.innerHTML = "";
 
   chapters.forEach((chapter) => {
     const option = document.createElement("option");
     option.value = chapter.id;
     option.textContent = chapter.title;
     chapterSelect.appendChild(option);
+
+    const label = document.createElement("label");
+    label.className = "chapter-checkbox-item";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = chapter.id;
+
+    checkbox.addEventListener("change", () => {
+      syncChapterSelectFromCheckboxes();
+    });
+
+    const text = document.createElement("span");
+    text.textContent = chapter.title;
+
+    label.appendChild(checkbox);
+    label.appendChild(text);
+    chapterCheckboxList.appendChild(label);
   });
+
+  updateChapterDropdownButtonText();
 }
 
 
