@@ -30,7 +30,7 @@ const progressFill = document.getElementById("progressFill");
 
 // ===== STATUS =====
 
-let currentChapterId = null;
+let currentChapterIds = [];
 let currentChapterItems = [];
 let remainingQuestions = [];
 let currentQuestion = null;
