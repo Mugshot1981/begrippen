@@ -237,3 +237,52 @@ body.blur-background main {
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.control-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.control-row-secondary {
+  grid-template-columns: 1fr auto;
+  align-items: end;
+}
+
+.mode-group {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.controls label {
+  font-weight: 600;
+}
+
+.controls select {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .control-row,
+  .control-row-secondary,
+  .mode-group {
+    grid-template-columns: 1fr;
+  }
+
+  .control-row-secondary {
+    gap: 14px;
+  }
+
+  #startButton {
+    width: 100%;
+  }
+}
