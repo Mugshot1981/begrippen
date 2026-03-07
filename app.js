@@ -286,7 +286,8 @@ startButton.addEventListener("click", () => {
     return;
   }
 
-  currentChapterId = selectedChapterId;
+    currentChapterId = selectedChapterId;
+  quizMode = modeSelect.value;
   currentChapterItems = getItemsForChapter(currentChapterId);
 
   if (!currentChapterItems || currentChapterItems.length < 4) {
