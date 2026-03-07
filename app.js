@@ -33,12 +33,17 @@ let remainingQuestions = [];
 let currentQuestion = null;
 let answered = false;
 
+
 let scoreCorrect = 0;
 let scoreTotal = 0;
 
 // Fouten-trainer (alleen huidige sessie, geen opslag)
 let wrongItems = [];
-
+]
+// quizmodi:
+// "term-to-answer" = begrip -> kies beschrijving
+// "answer-to-term" = beschrijving -> kies begrip
+let quizMode = "answer-to-term";
 
 // ===== HULPFUNCTIES =====
 
@@ -143,34 +148,51 @@ function buildQuestion() {
 
   const correctItem = remainingQuestions.pop();
 
-  const wrongAnswers = currentChapterItems
-    .filter((item) => item.id !== correctItem.id)
-    .map((item) => item.answer);
+  let questionText = "";
+  let correctOptionText = "";
+  let wrongOptionPool = [];
 
-  const uniqueWrongAnswers = [...new Set(wrongAnswers)];
-  const shuffledWrongAnswers = shuffleArray(uniqueWrongAnswers).slice(0, 3);
+  if (quizMode === "term-to-answer") {
+    questionText = correctItem.prompt;
+    correctOptionText = correctItem.answer;
+
+    wrongOptionPool = currentChapterItems
+      .filter((item) => item.id !== correctItem.id)
+      .map((item) => item.answer);
+  } else if (quizMode === "answer-to-term") {
+    questionText = correctItem.answer;
+    correctOptionText = correctItem.prompt;
+
+    wrongOptionPool = currentChapterItems
+      .filter((item) => item.id !== correctItem.id)
+      .map((item) => item.prompt);
+  }
+
+  const uniqueWrongOptions = [...new Set(wrongOptionPool)];
+  const shuffledWrongOptions = shuffleArray(uniqueWrongOptions).slice(0, 3);
 
   const options = shuffleArray([
     {
-      text: correctItem.answer,
+      text: correctOptionText,
       isCorrect: true
     },
-    ...shuffledWrongAnswers.map((answerText) => ({
-      text: answerText,
+    ...shuffledWrongOptions.map((optionText) => ({
+      text: optionText,
       isCorrect: false
     }))
   ]);
 
   currentQuestion = {
     id: correctItem.id,
-    prompt: correctItem.prompt,
+    prompt: questionText,
     answer: correctItem.answer,
+    correctTerm: correctItem.prompt,
+    correctAnswer: correctItem.answer,
     options: options
   };
 
   renderQuestion();
 }
-
 
 // ===== VRAAG TONEN =====
 
