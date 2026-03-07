@@ -1,6 +1,6 @@
 // ===== ELEMENTEN =====
 
-cconst chapterSelect = document.getElementById("chapterSelect");
+const chapterSelect = document.getElementById("chapterSelect");
 const chapterDropdownButton = document.getElementById("chapterDropdownButton");
 const chapterDropdownPanel = document.getElementById("chapterDropdownPanel");
 const chapterCheckboxList = document.getElementById("chapterCheckboxList");
