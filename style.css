@@ -34,40 +34,51 @@ h1 {
 }
 
 /* ===== CONTROLS ===== */
-
 .controls {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 20px 28px;
-  align-items: center;
-  margin-bottom: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
-.controls label {
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.form-row label {
+  width: 230px;
   font-size: 22px;
   font-weight: 700;
-  color: #111;
+  flex-shrink: 0;
 }
 
-.controls select {
-  width: 100%;
+.form-row select {
+  flex: 1;
 }
 
-.controls button {
-  justify-self: start;
+.form-row-bottom {
+  justify-content: flex-end;
 }
 
-.controls .spacer {
-  visibility: hidden;
+.mode-wrap {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+  max-width: 760px;
 }
 
-select,
-button {
-  font-size: 16px;
-  padding: 8px 12px;
+.mode-wrap label {
+  width: 170px;
+  font-size: 22px;
+  font-weight: 700;
+  flex-shrink: 0;
 }
 
-select {
+#chapterSelect,
+#modeSelect {
   height: 56px;
   border: 1px solid #888;
   border-radius: 6px;
@@ -76,19 +87,33 @@ select {
   padding: 0 16px;
 }
 
-button {
+#startButton {
+  height: 56px;
+  padding: 0 26px;
+  font-size: 22px;
   border: 1px solid #888;
   border-radius: 6px;
   background: #f8f8f8;
-  cursor: pointer;
-  font-size: 22px;
-  padding: 14px 26px;
 }
 
-button:hover {
-  background: #efefef;
-}
+@media (max-width: 900px) {
+  .form-row,
+  .form-row-bottom,
+  .mode-wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
+  .form-row label,
+  .mode-wrap label,
+  #startButton {
+    width: 100%;
+  }
+
+  .mode-wrap {
+    max-width: none;
+  }
+}
 /* ===== QUIZ ===== */
 
 .hidden {
