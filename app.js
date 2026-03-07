@@ -283,8 +283,9 @@ startButton.addEventListener("click", () => {
 
 feedback.addEventListener("click", (event) => {
   if (event.target && event.target.id === "feedbackContinueButton") {
-    buildQuestion();
-  }
+  document.body.classList.remove("blur-background");
+  buildQuestion();
+}
 });
 
 
