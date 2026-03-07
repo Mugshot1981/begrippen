@@ -7,6 +7,7 @@ const termDisplay = document.getElementById("termDisplay");
 const answersContainer = document.getElementById("answers");
 const feedback = document.getElementById("feedback");
 const nextButton = document.getElementById("nextButton");
+const stopButton = document.getElementById("stopButton");
 
 const endScreen = document.getElementById("endScreen");
 const wrongCountText = document.getElementById("wrongCountText");
