@@ -360,10 +360,11 @@ if (retryWrongButton) {
 
 if (restartButton) {
   restartButton.addEventListener("click", () => {
-    currentChapterItems = getItemsForChapter(currentChapterId);
+    currentChapterItems = getItemsForChapters(currentChapterIds);
     remainingQuestions = shuffleArray([...currentChapterItems]);
     scoreCorrect = 0;
     scoreTotal = 0;
+    wrongItems = [];
     updateScoreDisplay();
 
     endScreen.classList.add("hidden");
