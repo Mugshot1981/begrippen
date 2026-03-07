@@ -280,33 +280,41 @@ document.body.appendChild(backdrop);
 }
 
 // ===== QUIZ STARTEN =====
-
 startButton.addEventListener("click", () => {
-  const selectedChapterId = chapterSelect.value;
+  const selectedChapterIds = Array.from(chapterSelect.selectedOptions).map(
+    (option) => option.value
+  );
 
-  if (!selectedChapterId) {
-    alert("Kies eerst een hoofdstuk");
+  if (selectedChapterIds.length === 0) {
+    alert("Kies eerst één of meer hoofdstukken");
     return;
   }
 
-  currentChapterId = selectedChapterId;
+  currentChapterIds = selectedChapterIds;
   quizMode = modeSelect.value;
-  currentChapterItems = getItemsForChapter(currentChapterId);
+  currentChapterItems = getItemsForChapters(currentChapterIds);
 
-  const selectedChapter = chapters.find((chapter) => chapter.id === currentChapterId);
-  quizSessionTitle.textContent = selectedChapter ? selectedChapter.title : "";
+  const selectedChapters = chapters.filter((chapter) =>
+    currentChapterIds.includes(chapter.id)
+  );
+
+  quizSessionTitle.textContent =
+    selectedChapters.length === 1
+      ? selectedChapters[0].title
+      : `${selectedChapters.length} hoofdstukken geselecteerd`;
 
   if (quizMode === "term-to-answer") {
     quizSessionMode.textContent = "Begrip → beschrijving";
   } else {
     quizSessionMode.textContent = "Beschrijving → begrip";
   }
+
   if (!currentChapterItems || currentChapterItems.length < 4) {
-    alert("Dit hoofdstuk heeft minimaal 4 begrippen nodig.");
+    alert("De selectie bevat minimaal 4 begrippen nodig.");
     return;
   }
 
-   remainingQuestions = shuffleArray([...currentChapterItems]);
+  remainingQuestions = shuffleArray([...currentChapterItems]);
   scoreCorrect = 0;
   scoreTotal = 0;
   wrongItems = [];
@@ -317,7 +325,6 @@ startButton.addEventListener("click", () => {
   document.body.classList.add("quiz-active");
   buildQuestion();
 });
-
 
 // ===== VOLGENDE VRAAG =====
 
