@@ -418,11 +418,10 @@ if (quizMode === "term-to-answer") {
   quizSessionMode.textContent = "Gebeurtenis → jaartal";
 }
 
-  if (!currentChapterItems || currentChapterItems.length < 4) {
-    alert("De selectie bevat minimaal 4 begrippen nodig.");
-    return;
-  }
-
+ if (!currentChapterItems || currentChapterItems.length < 4) {
+  alert("De selectie moet minimaal 4 vragen bevatten.");
+  return;
+}
   remainingQuestions = shuffleArray([...currentChapterItems]);
   scoreCorrect = 0;
   scoreTotal = 0;
