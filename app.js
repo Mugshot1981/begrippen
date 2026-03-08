@@ -390,24 +390,8 @@ startButton.addEventListener("click", () => {
   }
 
   currentChapterIds = selectedChapterIds;
- quizMode = modeSelect.value;
-
-if (quizMode === "years") {
-
-  currentChapterItems = historyYears
-    .filter(item => currentChapterIds.includes(item.chapterId))
-    .map(item => ({
-      id: item.id,
-      chapterId: item.chapterId,
-      prompt: item.year,
-      answer: item.event
-    }));
-
-} else {
-
+  quizMode = modeSelect.value;
   currentChapterItems = getItemsForChapters(currentChapterIds);
-
-}
 
   const selectedChapters = chapters.filter((chapter) =>
     currentChapterIds.includes(chapter.id)
