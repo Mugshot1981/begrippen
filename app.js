@@ -230,10 +230,12 @@ function buildQuestion() {
   let questionText = "";
   let correctOptionText = "";
   let wrongOptionPool = [];
-if (quizMode === "term-to-answer") questionLabel.textContent = "Begrip";
-else if (quizMode === "answer-to-term") questionLabel.textContent = "Beschrijving";
-else if (quizMode === "years") questionLabel.textContent = "Jaartal";
-else if (quizMode === "event-years") questionLabel.textContent = "Gebeurtenis";
+if (questionLabel) {
+  if (quizMode === "term-to-answer") questionLabel.textContent = "Begrip";
+  else if (quizMode === "answer-to-term") questionLabel.textContent = "Beschrijving";
+  else if (quizMode === "years") questionLabel.textContent = "Jaartal";
+  else if (quizMode === "event-years") questionLabel.textContent = "Gebeurtenis";
+}
  if (quizMode === "term-to-answer") {
 
   questionText = correctItem.prompt;
