@@ -438,9 +438,6 @@ if (stopButton) {
     if (backdrop) backdrop.remove();
   });
 }
-chapterDropdownButton.addEventListener("click", () => {
-  chapterDropdownPanel.classList.toggle("hidden");
-});
 
 // ===== INIT =====
 
