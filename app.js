@@ -5,6 +5,7 @@ const chapterTileGrid = document.getElementById("chapterTileGrid");
 const startButton = document.getElementById("startButton");
 const quizArea = document.getElementById("quizArea");
 const termDisplay = document.getElementById("termDisplay");
+const questionLabel = document.getElementById("questionLabel");
 const answersContainer = document.getElementById("answers");
 const feedback = document.getElementById("feedback");
 const nextButton = document.getElementById("nextButton");
