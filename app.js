@@ -134,9 +134,26 @@ function showEndScreen() {
 }
 
 function getItemsForChapters(chapterIds) {
+
+  // JAARTALLEN QUIZ
+  if (quizMode === "years") {
+
+    return historyYears
+      .filter(item => chapterIds.includes(item.chapterId))
+      .map(item => ({
+        id: item.id,
+        chapterId: item.chapterId,
+        prompt: item.year,
+        answer: item.event
+      }));
+
+  }
+
+  // NORMALE BEGRIPPEN QUIZ
   return items.filter((item) => {
     return chapterIds.includes(item.chapterId) && item.type === "begrip";
   });
+
 }
 
 
