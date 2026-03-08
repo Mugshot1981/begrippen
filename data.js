@@ -1552,7 +1552,7 @@ const historyYears = [
     chapterId: "his-h1",
     year: "1983",
     event: "Sociale grondrechten in de grondwet"
-  }
+  },
   
 // Hoofdstuk 2 – Eerste Wereldoorlog
 
