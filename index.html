@@ -15,18 +15,11 @@
       </p>
       
 <div class="controls">
-  <div class="form-row">
-  <label for="chapterSelect">Kies een hoofdstuk:</label>
+<div class="form-row chapter-row">
+  <label for="chapterSelect">Kies hoofdstukken:</label>
 
-  <div class="chapter-dropdown">
-    <button id="chapterDropdownButton" type="button" class="chapter-dropdown-button">
-      Kies hoofdstukken
-    </button>
-
-    <div id="chapterDropdownPanel" class="chapter-dropdown-panel hidden">
-      <div id="chapterCheckboxList" class="chapter-checkbox-list"></div>
-    </div>
-
+  <div class="chapter-tiles-wrap">
+    <div id="chapterTileGrid" class="chapter-tile-grid"></div>
     <select id="chapterSelect" multiple size="5" class="hidden"></select>
   </div>
 </div>
