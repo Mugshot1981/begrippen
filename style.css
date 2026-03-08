@@ -37,41 +37,26 @@ h1 {
 }
 
 .form-row {
-  display:grid;
-  grid-template-columns: 200px 320px;
-  align-items:center;
-  gap:20px;
+  display: grid;
+  grid-template-columns: 220px 320px;
+  align-items: center;
+  gap: 20px;
 }
 
 .form-row label {
-  width: 160px;
   font-weight: 600;
-  flex-shrink: 0;
-}
-
-.form-row select {
-  flex: 1;
+  text-align: left;
 }
 
 .form-row-bottom {
-  display:grid;
-  grid-template-columns: 200px 320px auto;
-  align-items:center;
-  gap:20px;
+  display: grid;
+  grid-template-columns: 220px 320px 180px;
+  align-items: center;
+  gap: 20px;
 }
 
 .mode-wrap {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex: 1;
-  max-width: 470px;
-}
-
-.mode-wrap label {
-  width: 100px;
-  font-weight: 600;
-  flex-shrink: 0;
+  display: contents;
 }
 
 select,
@@ -80,12 +65,13 @@ button {
   padding: 8px 12px;
 }
 
-#chapterSelect,
 #modeSelect {
+  width: 320px;
   height: 42px;
 }
 
 #startButton {
+  width: 180px;
   height: 42px;
   white-space: nowrap;
 }
@@ -336,7 +322,7 @@ body.quiz-active .controls {
 }
 
 
-////////////////////
+
 body.quiz-active h1,
 body.quiz-active .intro,
 body.quiz-active .controls {
