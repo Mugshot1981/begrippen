@@ -37,9 +37,10 @@ h1 {
 }
 
 .form-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display:grid;
+  grid-template-columns: 200px 320px;
+  align-items:center;
+  gap:20px;
 }
 
 .form-row label {
