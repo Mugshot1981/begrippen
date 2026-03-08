@@ -50,11 +50,20 @@ h1 {
 
 .form-row-bottom {
   display: grid;
-  grid-template-columns: 220px 320px 160px;
+  grid-template-columns: 220px 320px;
+  align-items: center;
+  gap: 20px;
+}
+.form-row-button {
+  display: grid;
+  grid-template-columns: 220px 320px;
   align-items: center;
   gap: 20px;
 }
 
+.form-row-button #startButton {
+  justify-self: center;
+}
 .mode-wrap {
   display: contents;
 }
