@@ -71,9 +71,10 @@ button {
 }
 
 #startButton {
-  width: 180px;
+  width: 160px;
   height: 42px;
   white-space: nowrap;
+  justify-self: start;
 }
 
 /* ===== QUIZ ===== */
