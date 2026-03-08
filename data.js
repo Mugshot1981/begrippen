@@ -1510,3 +1510,49 @@ const items = [
 }
 ];
 
+// =========================
+// GESCHIEDENIS JAARTALLEN
+// =========================
+
+export const historyYears = [
+
+  // Hoofdstuk 1
+  {
+    id: "h1-1848",
+    chapterId: "his-h1",
+    year: "1848",
+    event: "Grondwetsherziening: parlementair stelsel en grondrechten"
+  },
+  {
+    id: "h1-1866",
+    chapterId: "his-h1",
+    year: "1866-1867",
+    event: "Luxemburgse kwestie"
+  },
+  {
+    id: "h1-1887",
+    chapterId: "his-h1",
+    year: "1887",
+    event: "Caoutchouc-artikel"
+  },
+  {
+    id: "h1-1917",
+    chapterId: "his-h1",
+    year: "1917",
+    event: "Wijziging grondwet (Pacificatie)"
+  },
+  {
+    id: "h1-1919",
+    chapterId: "his-h1",
+    year: "1919",
+    event: "Algemeen kiesrecht voor vrouwen"
+  },
+  {
+    id: "h1-1983",
+    chapterId: "his-h1",
+    year: "1983",
+    event: "Sociale grondrechten in de grondwet"
+  }
+
+];
+
