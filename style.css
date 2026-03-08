@@ -374,30 +374,37 @@ body.quiz-active .controls {
 
 .chapter-tile-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
 }
 
 .chapter-tile {
-  min-height: 64px;
-  padding: 12px 14px;
-  border: 1px solid #cfd6e0;
+  min-height: 72px;
+  padding: 16px;
+  border: 1px solid #d6dbe3;
   border-radius: 10px;
   background: #ffffff;
+
+  font-size: 15px;
+  line-height: 1.3;
   text-align: left;
-  font-size: 14px;
-  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+
   cursor: pointer;
+  transition: all 0.12s ease;
 }
 
 .chapter-tile:hover {
-  background: #f8fafc;
+  background: #f4f6fb;
+  border-color: #bfc7d4;
 }
 
 .chapter-tile.selected {
   border-color: #4f46e5;
   background: #eef2ff;
-  box-shadow: inset 0 0 0 1px #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79,70,229,0.15);
 }
 
 .chapter-checkbox-item:hover {
