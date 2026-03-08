@@ -52,6 +52,25 @@ let wrongItems = [];
 let quizMode = "answer-to-term";
 
 // ===== HULPFUNCTIES =====
+function getTileTitle(title) {
+
+  let cleaned = title;
+
+  // "Hoofdstuk X – " verwijderen
+  cleaned = cleaned.replace(/^Hoofdstuk\s+\d+\s+–\s+/i, "");
+
+  // jaartallen verwijderen
+  cleaned = cleaned.replace(/\d{4}\s*-\s*\d{4}/g, "");
+  cleaned = cleaned.replace(/\d{4}\s*-\s*nu/g, "");
+
+  // "en dekolonisatie" inkorten
+  cleaned = cleaned.replace(/\sen\sdekolonisatie/i, "");
+
+  // spaties opschonen
+  cleaned = cleaned.replace(/\s+/g, " ").trim();
+
+  return cleaned;
+}
 
 function shuffleArray(array) {
   const copy = [...array];
