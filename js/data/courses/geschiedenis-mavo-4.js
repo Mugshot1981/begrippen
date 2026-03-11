@@ -1949,6 +1949,90 @@ export const historyMavo4Course = {
     terms: items,
     years: historyYears,
         persons: [
+
+          {
+id: "his-p1",
+chapterId: "his-h1",
+name: "Koning Willem II",
+description: "Koning van Nederland van 1840 tot 1849. In 1848 gaf hij opdracht tot het maken van een nieuwe grondwet."
+},
+
+{
+id: "his-p2",
+chapterId: "his-h1",
+name: "Koning Willem III",
+description: "Koning van Nederland van 1849 tot 1890. Hij kreeg ruzie met het parlement over Luxemburg."
+},
+
+{
+id: "his-p3",
+chapterId: "his-h1",
+name: "Koningin Wilhelmina",
+description: "Koningin van Nederland van 1890 tot 1948. Tijdens de Tweede Wereldoorlog sprak zij vanuit Londen via Radio Oranje."
+},
+
+{
+id: "his-p4",
+chapterId: "his-h1",
+name: "Koningin Juliana",
+description: "Koningin van Nederland van 1948 tot 1980."
+},
+
+{
+id: "his-p5",
+chapterId: "his-h1",
+name: "Koningin Beatrix",
+description: "Koningin van Nederland van 1980 tot 2013."
+},
+
+{
+id: "his-p6",
+chapterId: "his-h1",
+name: "Koning Willem-Alexander",
+description: "Koning van Nederland sinds 2013."
+},
+
+{
+id: "his-p7",
+chapterId: "his-h1",
+name: "Johan Rudolf Thorbecke",
+description: "Liberale politicus die in 1848 de nieuwe grondwet schreef en Nederland democratischer maakte."
+},
+
+{
+id: "his-p8",
+chapterId: "his-h1",
+name: "Pieter Jelles Troelstra",
+description: "Socialistisch politicus en leider van de SDAP. In 1918 riep hij op tot een revolutie."
+},
+
+{
+id: "his-p9",
+chapterId: "his-h1",
+name: "Abraham Kuyper",
+description: "Protestants politicus en oprichter van de Anti-Revolutionaire Partij (ARP)."
+},
+
+{
+id: "his-p10",
+chapterId: "his-h1",
+name: "Wilhelmina Drucker",
+description: "Feministe uit de eerste feministische golf en medeoprichter van de Vereniging voor Vrouwenkiesrecht."
+},
+
+{
+id: "his-p11",
+chapterId: "his-h1",
+name: "Herman Schaepman",
+description: "Katholiek politicus die hielp de katholieke politieke beweging te organiseren."
+},
+
+{
+id: "his-p12",
+chapterId: "his-h1",
+name: "Aletta Jacobs",
+description: "Eerste vrouwelijke arts van Nederland en voorvechter van vrouwenkiesrecht."
+},
       {
         id: "his-p-001",
         chapterId: "his-h2",
@@ -1972,7 +2056,118 @@ export const historyMavo4Course = {
         chapterId: "his-h2",
         name: "Pieter Jelles Troelstra",
         description: "Socialistisch politicus en een van de oprichters van de SDAP. In 1918 riep hij op tot een revolutie."
-      }
+      },
+
+
+          {
+  id: "his-p-hitler",
+  chapterId: "his-h3",
+  name: "Adolf Hitler",
+  description: "Dictator van nazi-Duitsland. Hij begon de Tweede Wereldoorlog en gaf opdracht tot de Holocaust."
+},
+{
+  id: "his-p-colijn",
+  chapterId: "his-h3",
+  name: "Hendrik Colijn",
+  description: "Minister-president van Nederland tijdens de economische crisis van de jaren 1930. Hij voerde de aanpassingspolitiek en hield vast aan neutraliteit."
+},
+{
+  id: "his-p-stalin",
+  chapterId: "his-h3",
+  name: "Jozef Stalin",
+  description: "Dictator van de communistische Sovjet-Unie. Hij leidde de Sovjet-Unie tijdens de Tweede Wereldoorlog en speelde een grote rol bij het begin van de Koude Oorlog."
+},
+{
+  id: "his-p-mussert",
+  chapterId: "his-h3",
+  name: "Anton Mussert",
+  description: "Leider van de extreemrechtse NSB. Tijdens de oorlog werkte hij samen met de Duitse bezetters."
+},
+{
+  id: "his-p-mussolini",
+  chapterId: "his-h3",
+  name: "Benito Mussolini",
+  description: "Dictator van het fascistische Italië. Hij bedacht het fascisme en was bondgenoot van nazi-Duitsland."
+},
+       {
+  id: "his-p13",
+  chapterId: "his-h4",
+  name: "Winston Churchill",
+  description: "Minister-president van Groot-Brittannië tijdens de Tweede Wereldoorlog."
+},
+{
+  id: "his-p14",
+  chapterId: "his-h4",
+  name: "Anne Frank",
+  description: "Joods meisje dat in 1945 omkwam in een vernietigingskamp. Haar dagboek werd wereldberoemd."
+},
+{
+  id: "his-p15",
+  chapterId: "his-h4",
+  name: "Franklin D. Roosevelt",
+  description: "President van de Verenigde Staten tijdens de Tweede Wereldoorlog."
+},
+{
+  id: "his-p16",
+  chapterId: "his-h4",
+  name: "Soekarno",
+  description: "Indonesisch politicus die streed voor onafhankelijkheid en de eerste president van de Republiek Indonesië werd."
+},
+{
+  id: "his-p17",
+  chapterId: "his-h4",
+  name: "Koningin Wilhelmina",
+  description: "Koningin van Nederland van 1890 tot 1948. Tijdens de Duitse bezetting woonde en werkte zij in Londen."
+},
+{
+  id: "his-p18",
+  chapterId: "his-h4",
+  name: "Adolf Hitler",
+  description: "Dictator van nazi-Duitsland. Hij begon de Tweede Wereldoorlog en gaf opdracht tot de Holocaust."
+},
+{
+  id: "his-p19",
+  chapterId: "his-h4",
+  name: "Jozef Stalin",
+  description: "Dictator van de communistische Sovjet-Unie. Hij leidde de Sovjet-Unie tijdens de Tweede Wereldoorlog."
+},
+      {
+  id: "his-p20",
+  chapterId: "his-h5",
+  name: "Willem Drees",
+  description: "Sociaaldemocraat en premier van Nederland. In de jaren 1950 begon zijn regering met de opbouw van een verzorgingsstaat."
+},
+{
+  id: "his-p21",
+  chapterId: "his-h5",
+  name: "Ronald Reagan",
+  description: "Amerikaanse president die in de jaren 1980 met de Sovjet-Unie sprak over ontwapening."
+},
+{
+  id: "his-p22",
+  chapterId: "his-h5",
+  name: "Nikita Chroesjtsjov",
+  description: "Leider van de Sovjet-Unie tijdens de Hongaarse Opstand (1956), de bouw van de Berlijnse Muur (1961) en de Cubacrisis (1962)."
+},
+{
+  id: "his-p23",
+  chapterId: "his-h5",
+  name: "Michael Gorbatsjov",
+  description: "Leider van de Sovjet-Unie. Zijn hervormingen (glasnost en perestrojka) droegen bij aan het einde van de Koude Oorlog en de val van de Berlijnse Muur."
+},
+{
+  id: "his-p24",
+  chapterId: "his-h5",
+  name: "John F. Kennedy",
+  description: "President van de Verenigde Staten tijdens de bouw van de Berlijnse Muur (1961) en de Cubacrisis (1962)."
+},
+{
+  id: "his-p25",
+  chapterId: "his-h5",
+  name: "Pim Fortuyn",
+  description: "Nederlandse politicus die in 2002 een nieuwe partij oprichtte en veel aandacht kreeg met kritiek op de multiculturele samenleving."
+}    
+          
     ]
   },
 
