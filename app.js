@@ -788,17 +788,13 @@ function populateModeSelect() {
   });
 }
 
-const currentUser = await requireAuth();
+applyActiveCourseToPage();
+populateModeSelect();
+initCourseSelectors();
+bindCourseSelectors();
+loadChapters();
+updateScoreDisplay();
+updateStartButtonState();
 
-if (currentUser) {
-  applyActiveCourseToPage();
-  populateModeSelect();
-  initCourseSelectors();
-  bindCourseSelectors();
-  loadChapters();
-  updateScoreDisplay();
-  updateStartButtonState();
-
-  chapterSelect.addEventListener("change", updateStartButtonState);
-  modeSelect.addEventListener("change", updateStartButtonState);
-}
+chapterSelect.addEventListener("change", updateStartButtonState);
+modeSelect.addEventListener("change", updateStartButtonState);
