@@ -311,22 +311,33 @@ function syncChapterTilesFromSelect() {
 }
 
 function updateChapterSelectorView() {
-  const useDropdownView = activeCourse.chapters.length > 10;
+  const useListView = activeCourse.chapters.length > 10;
 
   if (chapterTileGrid) {
-    chapterTileGrid.style.display = useDropdownView ? "none" : "";
+    chapterTileGrid.style.display = "grid";
+    chapterTileGrid.classList.toggle("chapter-list-mode", useListView);
+
+    chapterTileGrid.style.gridTemplateColumns = useListView
+      ? "1fr"
+      : "repeat(auto-fit, minmax(160px, 1fr))";
+
+    chapterTileGrid.style.maxHeight = useListView ? "320px" : "";
+    chapterTileGrid.style.overflowY = useListView ? "auto" : "";
+    chapterTileGrid.style.gap = useListView ? "10px" : "";
   }
 
   if (chapterSelect) {
-    chapterSelect.style.display = useDropdownView ? "block" : "none";
-    chapterSelect.size = useDropdownView ? Math.min(activeCourse.chapters.length, 12) : 0;
+    chapterSelect.style.display = "none";
     chapterSelect.multiple = true;
+    chapterSelect.size = 0;
   }
 }
 
 function loadChapters() {
   chapterSelect.innerHTML = "";
   chapterTileGrid.innerHTML = "";
+
+  const useListView = activeCourse.chapters.length > 10;
 
   activeCourse.chapters.forEach((chapter) => {
     const option = document.createElement("option");
@@ -335,12 +346,13 @@ function loadChapters() {
     chapterSelect.appendChild(option);
 
     const tile = document.createElement("button");
-
     tile.type = "button";
-    tile.className = "chapter-tile";
+    tile.className = useListView ? "chapter-list-item" : "chapter-tile";
     tile.dataset.chapterId = chapter.id;
 
-    tile.textContent = getTileTitle(chapter.title);
+    tile.textContent = useListView
+      ? chapter.title
+      : getTileTitle(chapter.title);
 
     tile.addEventListener("click", () => {
       const optionToToggle = Array.from(chapterSelect.options).find(
