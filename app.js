@@ -310,11 +310,25 @@ function syncChapterTilesFromSelect() {
   });
 }
 
+function updateChapterSelectorView() {
+  const useDropdownView = activeCourse.chapters.length > 10;
+
+  if (chapterTileGrid) {
+    chapterTileGrid.style.display = useDropdownView ? "none" : "";
+  }
+
+  if (chapterSelect) {
+    chapterSelect.style.display = useDropdownView ? "block" : "none";
+    chapterSelect.size = useDropdownView ? Math.min(activeCourse.chapters.length, 12) : 0;
+    chapterSelect.multiple = true;
+  }
+}
+
 function loadChapters() {
   chapterSelect.innerHTML = "";
   chapterTileGrid.innerHTML = "";
 
-activeCourse.chapters.forEach((chapter) => {
+  activeCourse.chapters.forEach((chapter) => {
     const option = document.createElement("option");
     option.value = chapter.id;
     option.textContent = chapter.title;
@@ -322,28 +336,29 @@ activeCourse.chapters.forEach((chapter) => {
 
     const tile = document.createElement("button");
 
-tile.type = "button";
-tile.className = "chapter-tile";
-tile.dataset.chapterId = chapter.id;
+    tile.type = "button";
+    tile.className = "chapter-tile";
+    tile.dataset.chapterId = chapter.id;
 
-tile.textContent = getTileTitle(chapter.title);
+    tile.textContent = getTileTitle(chapter.title);
 
-tile.addEventListener("click", () => {
-  const optionToToggle = Array.from(chapterSelect.options).find(
-    (option) => option.value === chapter.id
-  );
+    tile.addEventListener("click", () => {
+      const optionToToggle = Array.from(chapterSelect.options).find(
+        (option) => option.value === chapter.id
+      );
 
-  if (!optionToToggle) return;
+      if (!optionToToggle) return;
 
-  optionToToggle.selected = !optionToToggle.selected;
-  syncChapterTilesFromSelect();
-  chapterSelect.dispatchEvent(new Event("change"));
-});
+      optionToToggle.selected = !optionToToggle.selected;
+      syncChapterTilesFromSelect();
+      chapterSelect.dispatchEvent(new Event("change"));
+    });
 
     chapterTileGrid.appendChild(tile);
   });
 
   syncChapterTilesFromSelect();
+  updateChapterSelectorView();
 }
 // ===== VRAAG OPBOUWEN =====
 
